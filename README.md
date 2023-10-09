@@ -23,4 +23,4 @@ You should see a page that displays the database results in a table, a list, a f
 
 ![Shows basic structure of HTML layout](structure.png)
 
-![Showing script running](screencast.webm)
+[Showing script running](screencast.webm)
