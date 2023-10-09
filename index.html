@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML for structuring database results with PHP</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="none.css">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    table {
+      border: 1px solid purple;
+      border-collapse: collapse;
+    }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>This shows various ways to structure database data using PHP and HTML</h1>
+    <p>
+      This file just contains the pure HTML styling.
+    </p>
+    <blockquote>
+
+    </blockquote>
+    <article>
+      <h2>Example with tables (HTML-only)</h2>
+      <table>
+        <caption>
+          My table
+        </caption>
+        <thead>
+          <tr>
+            <th scope='col'>Header 1</th>
+            <th scope='col'>Header 2</th>
+            <th scope='col'>Header 3</th>
+            <th scope='col'>Header 4</th>
+            <th scope='col'>Header 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope='row'>Table body data and header 1</th>
+            <td>Table body data 2</td>
+            <td>Table body data 3</td>
+            <td>Table body data 4</td>
+            <td>Table body data 5</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <article>
+      <h2>Example with list (HTML-only)</h2>
+      <figure>
+        <figcaption>My list</figcaption>
+        <ul>
+          <li>Data and header 1
+            <ul>
+              <li>Data 2</li>
+              <li>Data 3</li>
+              <li>Data 4</li>
+              <li>Data 5</li>
+            </ul>
+          </li>
+        </ul>
+      </figure>
+    </article>
+    <article>
+      <h2>Example with form (HTML-only)</h2>
+      <form method='post'>
+        <fieldset>
+          <legend>Row from the result set: Data 1</legend>
+          <ul>
+            <li>
+              <label for='data1'>Data1:</label>
+              <input type='text' id='data1' name='data1' value='Data 1'>
+            </li>
+            <li>
+              <label for='data2'>Data2:</label>
+              <input type='text' id='data2' name='data2' value='Data 2'>
+            </li>
+            <li>
+              <label for='data3'>Data3:</label>
+              <input type='text' id='data3' name='data3' value='Data 3'>
+            </li>
+            <li>
+              <label for='data4'>Data4:</label>
+              <input type='text' id='data4' name='data4' value='Data 4'>
+            </li>
+            <li>
+              <label for='data5'>Data5:</label>
+              <input type='text' id='data5' name='data5' value='Data 5'>
+            </li>
+            <li class='button'>
+              <button type="submit">Submit</button>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </article>
+    <article>
+      <h2>Example with grid layout (HTML-only)</h2>
+      <p>
+        3 column grid.
+      </p>
+      <div class='grid-container'>
+        <div class='grid-item'>
+          <h3>Data 1</h3>
+          <ul>
+            <li>Data 2</li>
+            <li>Data 3</li>
+            <li>Data 4</li>
+            <li>Data 5</li>
+          </ul>
+        </div>
+        <div class='grid-item'>
+          <h3>Data 1</h3>
+          <ul>
+            <li>Data 2</li>
+            <li>Data 3</li>
+            <li>Data 4</li>
+            <li>Data 5</li>
+          </ul>
+        </div>
+        <div class='grid-item'>
+          <h3>Data 1</h3>
+          <ul>
+            <li>Data 2</li>
+            <li>Data 3</li>
+            <li>Data 4</li>
+            <li>Data 5</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
