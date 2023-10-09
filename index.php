@@ -61,8 +61,14 @@ $db = connectToDatabase($dsn);
       grid-template-columns: repeat(3, 1fr);
     }
     table {
-      border: 1px solid purple;
       border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid black;
+      padding:0.3em;
+    }
+    tbody tr:nth-child(odd) {
+      background: #eee;
     }
   </style>
 </head>
