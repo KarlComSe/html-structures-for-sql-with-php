@@ -9,7 +9,7 @@ The code includes the following examples:
 To run the code, follow these steps:
 
 1. Create a SQLite database called example.db.
-2. Import the example.sql file into the database.
+2. Import the scehma.sql and example.sql file into the database.
 3. Open the index.php file in a web browser.
 
 You should see a page that displays the database results in a table, a list, a form, and a grid layout.
