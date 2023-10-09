@@ -1,7 +1,7 @@
 <?php 
 /**
  *
- * This code is copied from p. 456, PHP & MySQL by J. Ducket.
+ * This function is copied from p. 456, PHP & MySQL by J. Ducket.
  * Returns a PDO object, on which it is possible to use fetch, fetchAll, fetchColumn.
  *
  */
